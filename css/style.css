@@ -22,7 +22,6 @@ body {
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
     line-height: 100vh;
-    transition: 500ms;
 }
 
 @media (max-width: 2560px) { #hex-time { font-size: 10rem; } }
