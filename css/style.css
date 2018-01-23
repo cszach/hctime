@@ -9,9 +9,17 @@ html {
 
 body {
     height: 100vh;
-    text-align: center;
+    width: 100vw;
 }
 
 #hex-time {
+    display: block;
+    height: inherit;
+    width: inherit;
+    font-size: 5rem;
+    font-family: Roboto Condensed, Open Sans Condensed, Roboto, sans-serif;
+    color: white;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
     line-height: 100vh;
 }
