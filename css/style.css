@@ -16,10 +16,17 @@ body {
     display: block;
     height: inherit;
     width: inherit;
-    font-size: 5rem;
-    font-family: Roboto Condensed, Open Sans Condensed, Roboto, sans-serif;
+    min-width: 200px;
+    font-family: Roboto Condensed, Open Sans Condensed, Roboto, Arial, sans-serif;
     color: white;
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
     line-height: 100vh;
 }
+
+@media (max-width: 2560px) { #hex-time { font-size: 10rem; } }
+@media (max-width: 1800px) { #hex-time { font-size: 7rem; } }
+@media (max-width: 1400px) { #hex-time { font-size: 6rem; } }
+@media (max-width: 800px) { #hex-time { font-size: 5rem; } }
+@media (max-width: 600px) { #hex-time { font-size: 4rem; } }
+@media (max-width: 480px) { #hex-time { font-size: 3rem; } }
