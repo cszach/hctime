@@ -5,18 +5,17 @@ function sed(tInput) {
     return tInput;
 }
 
+function clock() {
+    var getTime = new Date();
+    var agent = "#" + sed(getTime.getHours()) + sed(getTime.getMinutes()) + sed(getTime.getSeconds());
+    var item = document.getElementById("hex-time");
 
-function main() {
-    // Time mechanism
-      var getTime = new Date();
-      var agent = "#" + sed(getTime.getHours()) + sed(getTime.getMinutes()) + sed(getTime.getSeconds());
-      var item = document.getElementById("hex-time");
-
-      item.innerHTML = agent;
-      item.style.backgroundColor = agent;
-
-    // Load particle.js
-      particlesJS.load("particles-js", "particles.json", function() {});
+    item.innerHTML = agent;
+    item.style.backgroundColor = agent;
 }
 
-setInterval(main, 100);
+// Start app
+  setInterval(clock, 100);
+
+// Load particle.js
+  particlesJS.load("particles-js", "particles.json", function() {});
