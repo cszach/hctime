@@ -7,12 +7,16 @@ function sed(tInput) {
 
 
 function main() {
-    var getTime = new Date();
-    var agent = "#" + sed(getTime.getHours()) + sed(getTime.getMinutes()) + sed(getTime.getSeconds());
-    var item = document.getElementById("hex-time");
+    // Time mechanism
+      var getTime = new Date();
+      var agent = "#" + sed(getTime.getHours()) + sed(getTime.getMinutes()) + sed(getTime.getSeconds());
+      var item = document.getElementById("hex-time");
 
-    item.innerHTML = agent;
-    item.style.backgroundColor = agent;
+      item.innerHTML = agent;
+      item.style.backgroundColor = agent;
+
+    // Load particle.js
+      particlesJS.load("particles-js", "particles.json", function() {});
 }
 
 setInterval(main, 100);

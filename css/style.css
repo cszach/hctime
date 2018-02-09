@@ -8,6 +8,7 @@ html {
 }
 
 body {
+    position: relative;
     height: 100vh;
     width: 100vw;
 }
@@ -22,6 +23,12 @@ body {
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
     line-height: 100vh;
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 @media (max-width: 2560px) { #hex-time { font-size: 10rem; } }
