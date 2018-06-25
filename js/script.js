@@ -20,6 +20,6 @@ function clock() {
   setInterval(clock, 100);
 
 // Load particle.js
-  particlesJS.load("particles-js", "particles.json", function() {});
+  particlesJS.load("particles-js", "particlesjs-config.json", function() {});
 
 // @license-end
